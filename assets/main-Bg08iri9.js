@@ -1,7 +1,7 @@
 (function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))a(t);new MutationObserver(t=>{for(const i of t)if(i.type==="childList")for(const r of i.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&a(r)}).observe(document,{childList:!0,subtree:!0});function c(t){const i={};return t.integrity&&(i.integrity=t.integrity),t.referrerPolicy&&(i.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?i.credentials="include":t.crossOrigin==="anonymous"?i.credentials="omit":i.credentials="same-origin",i}function a(t){if(t.ep)return;t.ep=!0;const i=c(t);fetch(t.href,i)}})();function v(){const e=window.location.pathname;return`
     <nav class="navbar">
       <div class="container">
-        <a href="/" class="nav-logo">MAJIYOUNG</a>
+        <a href="/" class="nav-logo">MC Ma</a>
         <div class="nav-links">
           <a href="/" class="nav-link ${e==="/"||e==="/index.html"?"active":""}">HOME</a>
           <a href="/about.html" class="nav-link ${e==="/about.html"?"active":""}">ABOUT</a>
